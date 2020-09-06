@@ -1,8 +1,8 @@
 html {
     /* 
-    Setting a base font size of 10px give us easier rem calculations
-     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
-   */
+      Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
     font-size: 10px;
 }
 
@@ -40,14 +40,6 @@ body {
     text-align: center;
 }
 
-@media(max-width: 460px) {
-    #title>h1 {
-        font-size: 3.5rem;
-        line-height: 1.2;
-        text-align: center;
-    }
-}
-
 /* image */
 
 #img-div {
@@ -59,6 +51,7 @@ body {
 }
 
 #image {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -68,12 +61,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 1rem;
-}
-
-@media(max-width:460px) {
-    #img-caption {
-        font-size: 1.2rem;
-    }
 }
 
 /* tribute information */
@@ -102,13 +89,6 @@ article {
     font-style: italic;
 }
 
-@media(max-width:460px) {
-    article {
-        margin: auto;
-        max-width: 100%;
-    }
-}
-
 /* footer content */
 
 #more-about {
@@ -130,4 +110,19 @@ a {
 
 a:visited {
     color: #74638f;
+}
+
+@media (max-width: 768px) {
+    #title>h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+    #img-caption {
+        font-size: 1.2rem;
+    }
+    article {
+        margin: auto;
+        max-width: 100%;
+    }
 }
